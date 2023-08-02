@@ -1,0 +1,78 @@
+.carousel-item {
+    position: relative;
+  }
+
+.carousel-inner{
+    height: 600px;
+}
+
+.carousel-caption{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;   
+}
+.carousel-caption h3{
+  font-weight: 900;  
+}
+.carousel-caption p{
+    font-weight: 500;  
+  }
+
+
+.top-image1 {
+    position: absolute;
+    top: -5%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    
+  }
+.bottom-image1 {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    
+    z-index: 0;
+  }
+
+.top-image2 {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+.bottom-image2 {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    z-index: 0;
+  }
+.top-image3 {
+    position: absolute;
+    top: -5%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+.bottom-image3 {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    z-index: 0;
+  }
+
+
+  /* CSS */
+.navbar-nav {
+    width: 100%; /* ตั้งความกว้างให้เต็มของ navbar */
+    display: flex;
+    justify-content: center; /* จัดให้เนื้อหาอยู่ตรงกลาง */
+    margin-right: 150px;
+  }
+  
+.nav-item {
+    text-align: center; /* จัดให้เนื้อหาในแต่ละ nav-item อยู่ตรงกลาง */
+  }

@@ -1,0 +1,26 @@
+{% extends 'app_general/base.html' %}
+{% load static %}
+
+{% block title %} <title>การ์ด</title> {% endblock %}
+
+
+{% block content %}
+
+<div class="container">
+    <h1>การ์ด</h1>
+    {% for cards in all_cards %}
+
+    <div>
+
+        <img src="{{cards.card_image}}" alt="" width="200px">
+        <br>
+        <h1>ชื่อ {{cards.card_name}}</h1>
+        <h2>ดาว {{cards.card_star}}</h2>
+        <h5>เอฟเฟค {{cards.card_effect}}</h5>
+    </div>
+    <br>
+    {% endfor %}
+</div>
+
+
+{% endblock %}

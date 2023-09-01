@@ -1,14 +1,17 @@
 .carousel-item {
     position: relative;
+   
   }
 
 .carousel-inner{
-    height: 600px;
+    height: auto;
+    max-width: 100%;
+
 }
 
 .carousel-caption{
     position: absolute;
-    top: 45%;
+    align-items: end;
     left: 50%;
     transform: translateX(-50%);
     z-index: 1;   
@@ -23,23 +26,26 @@
 
 .top-image1 {
     position: absolute;
-    top: -5%;
+    top: 0%;
     left: 50%;
     transform: translateX(-50%);
     z-index: 1;
+    object-fit: cover;
+    object-position: center;
     
   }
 .bottom-image1 {
     display: block;
     margin: 0 auto;
     max-width: 100%;
-    
     z-index: 0;
+    object-fit: cover;
+    object-position: center;
   }
 
 .top-image2 {
     position: absolute;
-    top: 10%;
+    top: 15%;
     left: 50%;
     transform: translateX(-50%);
     z-index: 1;
@@ -49,6 +55,8 @@
     margin: 0 auto;
     max-width: 100%;
     z-index: 0;
+    object-fit: cover;
+    object-position: center;
   }
 .top-image3 {
     position: absolute;
@@ -62,6 +70,8 @@
     margin: 0 auto;
     max-width: 100%;
     z-index: 0;
+    object-fit: cover;
+    object-position: center;
   }
 
 
@@ -76,3 +86,17 @@
 .nav-item {
     text-align: center; /* จัดให้เนื้อหาในแต่ละ nav-item อยู่ตรงกลาง */
   }
+
+.card-box{
+  width: 300px;
+  border-radius: 10px;
+  border-color: black;
+}
+
+.card-text{
+  word-wrap: break-word;}
+
+.card-title{
+ font-weight: 600;
+ font-size: 20px;
+}

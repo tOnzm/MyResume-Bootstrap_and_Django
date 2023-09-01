@@ -10,4 +10,5 @@ class Cards(models.Model):
 
     def __str__(self):
         return self.card_name 
+
     

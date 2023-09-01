@@ -2,24 +2,35 @@
 {% load static %}
 
 {% block title %} <title>การ์ด</title> {% endblock %}
+{% load bootstrap5 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
 
 
 {% block content %}
 
 <div class="container">
     <h1>การ์ด</h1>
-    {% for cards in all_cards %}
-
-    <div>
-
-        <img src="{{cards.card_image}}" alt="" width="200px">
-        <br>
-        <h1>ชื่อ {{cards.card_name}}</h1>
-        <h2>ดาว {{cards.card_star}}</h2>
-        <h5>เอฟเฟค {{cards.card_effect}}</h5>
+       
+    <div class="row row-cols-4">
+      {% for card in all_cards %} <!-- สร้าง loop ตามลิสต์หรืออาเรย์ของ card -->
+        <div class="col">
+          <div class="card-box">
+            <img src="{{ card.card_image }}" class="card-img" alt="">
+            <div class="card-body">
+              <h5 class="card-title">{{ card.card_name }}</h5>
+              
+              <p>
+                <img src="{% static 'image/1200px-Starball_Red.svg.png' %}" alt="" width="20px">
+                <span>{{ card.card_star }}</span>
+              </p>
+              <p class="card-text">{{ card.card_effect }}</p>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
     </div>
-    <br>
-    {% endfor %}
+   
 </div>
 
 

@@ -3,6 +3,7 @@ from django.shortcuts import render
 from app_cards.models import Cards
 from django.http import Http404
 
+
 # Create your views here.
 
 def cards(request):
@@ -16,4 +17,5 @@ def card(request,card_id):
         return render(request, 'app_cards/cards.html',{"card":card})
     else:
         raise Http404('ไม่พบการ์ด')
+ 
 
